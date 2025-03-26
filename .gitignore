@@ -1,0 +1,7 @@
+#Node js dependencies
+node_modules
+
+#dotenv
+.env
+
+package-lock.json
