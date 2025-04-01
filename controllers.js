@@ -42,7 +42,7 @@ productController.put = async (req, res) => {
 
 productController.delete = async (req, res) => {
     try {
-        await productModel.findByIdAndDelete(req.query);
+        await productModel.findOneAndDelete(req.query);
         res.status(200).json({ message: "DELETE request received" });
     } catch (e) {
         res.send({ Message: `Sorry for the inconveneice, we are working the problem to fix it .Kindly, Be With US.....` })
